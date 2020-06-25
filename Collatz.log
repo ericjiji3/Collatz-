@@ -1,3 +1,15 @@
+commit 34791c38904703136c50c32c6875b1302fb51656
+Author: Eric Ji <eric.ji3333@gmail.com>
+Date:   Wed Jun 24 21:18:20 2020 -0500
+
+    removed comments
+
+commit 856084ba80df8f6d84f998b2f501a9b9fc4e8023
+Author: Eric Ji <eric.ji3333@gmail.com>
+Date:   Wed Jun 24 21:05:08 2020 -0500
+
+    optimized collatz
+
 commit 6b0ac16fde217e136fd81729bac12f453bbdd0b1
 Author: Eric Ji <eric.ji3333@gmail.com>
 Date:   Tue Jun 23 17:36:35 2020 -0500
