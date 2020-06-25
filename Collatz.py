@@ -41,15 +41,7 @@ def collatz_eval(i, j):
     else:
         start = i
         fin = j
-##    for key in cycleDict:
-##        if key > start:
-##            for y in range(start, key+1)
-##                LesserCycle = cycle(y)
-##                cycleList.append(LesserCycle)
-##        if key < finish:
-##            for z in range(key, fin+1)
-##                GreaterCycle = cycle(z)
-##                cycleList.append(GreaterCycle)
+        
     for k in range(start,fin+1):
         if k in cycleDict and fin > k+1000:
             inter = cycleDict.get(k)
