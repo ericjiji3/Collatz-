@@ -41,15 +41,23 @@ def collatz_eval(i, j):
     else:
         start = i
         fin = j
-        
-    for k in range(start,fin+1):
-        if k in cycleDict and fin > k+1000:
-            inter = cycleDict.get(k)
-            cycleList.append(inter)
-            k+=1000
+
+    while start <= fin:
+        if start in cycleDict:
+            if start+1000 <= fin:
+                cyc = cycle(start)
+                cycleList.append(cyc)
+                intervalMax = cycleDict.get(start+1000)
+                cycleList.append(intervalMax)
+                start+=1000
+            else:
+                cyc = cycle(start)
+                cycleList.append(cyc)
+                start+=1
         else:
-            cyc = cycle(k)
-            cycleList.append(cyc)
+                cyc = cycle(start)
+                cycleList.append(cyc)
+                start+=1
                 
     maxCycle = max(cycleList)
     assert maxCycle > 0
